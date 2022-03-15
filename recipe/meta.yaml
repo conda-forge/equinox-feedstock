@@ -1,5 +1,5 @@
 {% set name = "equinox" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 548ec0674ff0ea93980ef74625cb3ed373cd4282c6a485be9078c93caaaca30f
+  sha256: 7c9b300fa5c5b7491083c29d448ff4964dbc2553efac29a163713ec170e106b8
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/patrick-kidger/equinox
-  summary: 'Neural Networks in JAX.'
+  summary: Neural Networks in JAX.
   description: |
     Callable PyTrees and filtered JIT/grad transformations
     => neural networks in JAX.
