@@ -21,8 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - jax >=0.2.26
-    - jaxlib >=0.1.76
+    - jax >=0.3.4
 
 test:
   imports:
