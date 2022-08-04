@@ -1,5 +1,5 @@
 {% set name = "equinox" %}
-{% set version = "0.5.6" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac6527ef9f0a9c5e672c025116d62a13da88045120b27d7230df2a159adfaa1d
+  sha256: cfcf3c43a93988aefeac4e28a24855e535b2d630c0abc376b8b1f0f444c929ee
 
 build:
   noarch: python
