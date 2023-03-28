@@ -21,8 +21,9 @@ requirements:
     - setuptools
   run:
     - python >=3.8
-    - jax >=0.4.3
-    - jaxtyping >=0.2.12
+    - jax >=0.4.4
+    - jaxtyping >=0.2.14
+    - "typing-extensions >=4.5.0
 
 test:
   imports:
