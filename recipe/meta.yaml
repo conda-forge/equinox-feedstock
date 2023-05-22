@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - jax >=0.4.4
-    - jaxtyping >=0.2.14
+    - jaxtyping >=0.2.15
     - typing-extensions >=4.5.0
 
 test:
