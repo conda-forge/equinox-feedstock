@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - jax >=0.4.11
+    - jax >=0.4.13
     - jaxtyping >=0.2.20
     - typing-extensions >=4.5.0
 
