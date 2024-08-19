@@ -1,5 +1,5 @@
 {% set name = "equinox" %}
-{% set version = "0.11.4" %}
+{% set version = "0.11.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0033d9731083f402a855b12a0777a80aa8507651f7aa86d9f0f9503bcddfd320
+  sha256: 5e0ca252eeb20cc5eece225d3d35137c7e57f998a1c6422a1972db9e5c68b7f6
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - jax >=0.4.13
+    - jax >=0.4.13,!=0.4.27
     - jaxtyping >=0.2.20
     - typing-extensions >=4.5.0
 
