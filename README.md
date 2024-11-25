@@ -152,4 +152,5 @@ Feedstock Maintainers
 =====================
 
 * [@dhirschfeld](https://github.com/dhirschfeld/)
+* [@maresb](https://github.com/maresb/)
 
