@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - jax >=0.4.13,!=0.4.27
     - jaxtyping >=0.2.20
     - typing_extensions >=4.5.0
@@ -29,6 +29,7 @@ test:
   imports:
     - equinox
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
