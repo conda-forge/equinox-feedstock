@@ -1,5 +1,6 @@
 {% set name = "equinox" %}
-{% set version = "0.11.10" %}
+{% set version = "0.11.12" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f3e7d5545b71e427859a28050526d09adb6b20285c47476a606328a0b96c9509
+  sha256: bee22aabaf7ee0cde6f2ae58cf3b981dea73d47e297361a0203e299208ef1739
 
 build:
   noarch: python
@@ -21,9 +22,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - jax >=0.4.13,!=0.4.27
+    - jax >=0.4.38
     - jaxtyping >=0.2.20
     - typing_extensions >=4.5.0
+    - wadler-lindig >=0.1.0
 
 test:
   imports:
